@@ -1,12 +1,12 @@
 import streamlit as st
 import sys
 
-sys.path.append("fsdl_deforestation_detection/dashboard/")
+sys.path.append("Dashboard/")
 from dashboard_utils import load_css
 import layouts
 
 PAGES = dict(Playground=layouts.playground, Overview=layouts.overview)
-load_css("fsdl_deforestation_detection/dashboard/style.css")
+load_css("Dashboard/style.css")
 
 st.sidebar.title("About")
 st.sidebar.markdown(
